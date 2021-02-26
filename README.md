@@ -1,5 +1,7 @@
 # Java_Code_Snippets
 
-I usually practice leetcode problems with the goal of writing better quality codes and improve my problem solving skills.
+I *daily* practice leetcode problems with end in the mind to  - 
+> ### Write high-quality code
+> ### Improve my problem solving skills.
 
 Please checkout the code snippets to assess my code-quality.
