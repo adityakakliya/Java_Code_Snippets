@@ -2,7 +2,7 @@ class Solution {
     public boolean leadsToDestination(int n, int[][] edges, int source, int destination) {
         Graph graph = new Graph();
         Arrays.stream(edges).forEach(graph::addEdge);
-        return !graph.containsSelfLoop && graph.leadsToDestination(source, destination);
+        return graph.leadsToDestination(source, destination);
     }
 }
 
@@ -15,10 +15,8 @@ class Graph {
         adjacencyList = new HashMap<>();
         visited = new HashSet<>();
         visiting = new HashSet<>();
-        containsSelfLoop = false;
     }
     public void addEdge(int[] edge) {
-        if (edge[0] == edge[1]) containsSelfLoop = true;
         adjacencyList.computeIfAbsent(edge[0], list -> new ArrayList<>()).add(edge[1]);
     }
     
